@@ -7,13 +7,12 @@ import { RiAddLine, RiPencilLine } from "react-icons/ri";
 export default function UserList() {
   return (
     <Box>
-      
+
       <Header />
 
-      <Flex w="100%" maxW={1480} my="6" px={6} mx="auto"
-      >
+      <Flex w="100%" maxW={1480} my="6" px={6} mx="auto">
         <Sidebar />
-        <Box flex="1" borderRadius="8" bg="gray.800" p="8">
+        <Box flex="1" borderRadius={8} bg="gray.800" p="8">
           <Flex mb="8" justify="space-between" align="center">
             <Heading size="lg" fontWeight="normal">Users list</Heading>
             <Button as="a" size="sm" fontSize="sm" colorScheme="pink" leftIcon={<Icon as={RiAddLine} fontSize="20"/>}>Create new user</Button>
