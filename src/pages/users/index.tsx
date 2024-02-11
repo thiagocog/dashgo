@@ -1,12 +1,13 @@
 import Header from "@/src/components/Header";
+import Pagination from "@/src/components/Pagination";
 import Sidebar from "@/src/components/Sidebar";
 import { Box, Button, Checkbox, Flex, Heading, Icon, Table, Tbody, Td, Text, Th, Thead, Tr } from "@chakra-ui/react";
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
 
 export default function UserList() {
-
   return (
     <Box>
+      
       <Header />
 
       <Flex w="100%" maxW={1480} my="6" px={6} mx="auto"
@@ -70,6 +71,9 @@ export default function UserList() {
               </Tr>
             </Tbody>
           </Table>
+
+          <Pagination />
+
         </Box>
       </Flex>
     </Box>
